@@ -22,7 +22,7 @@ A clean, modern, and responsive developer portfolio template built with **React*
 ## 📂 Folder Structure
 
 ```
-beautiful-react-tailwind-portfolio/
+website-portfolio/
 ├── public/
 │   └── index.html
 ├── src/
