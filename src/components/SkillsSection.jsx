@@ -101,7 +101,7 @@ const skills = [
   },
   {
     name: "C++",
-    icon: "/icons/C++ (CPlusPlus).png",
+    icon: "/icons/CPlusPlus.png",
     category: "others",
   },
   {
