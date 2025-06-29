@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+@theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -18,47 +18,47 @@
   --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
-}
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
-  50% {
-    transform: translateY(-10px);
+  @keyframes pulse-subtle {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
   }
-}
-@keyframes pulse-subtle {
-  0%,
-  100% {
-    opacity: 1;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  50% {
-    opacity: 0.8;
-  }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes meteor {
-  0% {
-    transform: rotate(215deg) translateX(0);
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(215deg) translateX(-500px);
-    opacity: 0;
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
   }
 }
 
@@ -66,24 +66,18 @@
   :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
-
     --card: 0 0% 100%;
-
     --primary: 210 80% 55%;
     --primary-foreground: 210 40% 98%;
-
     --border: 214 32% 91%;
   }
 
   .dark {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
-
     --card: 222 47% 8%;
-
     --primary: 210 85% 65%;
     --primary-foreground: 213 31% 91%;
-
     --border: 217 33% 20%;
   }
 
@@ -98,7 +92,8 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
     transition-duration: 300ms;
     font-feature-settings: "rlig" 1, "calt" 1;
     background: linear-gradient(
@@ -108,6 +103,17 @@
       #2c5364 100%
     ) !important;
     position: relative;
+  }
+
+  .dark body {
+    /* Untuk dark mode, tambahkan gradasi gelap jika ingin efek lebih dramatis */
+    background: linear-gradient(
+      180deg,
+      #0a1a2f 0%,
+      #1a2a3a 60%,
+      #232b3b 100%
+    ) !important;
+    color: var(--foreground);
   }
 
   .body-light-effect::before {
@@ -170,7 +176,8 @@
   }
   .card-hover:hover {
     transform: scale(1.02);
-    box-shadow: 0 10px 15px -3px rgba(59,130,246,0.1), 0 4px 6px -4px rgba(59,130,246,0.1);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1),
+      0 4px 6px -4px rgba(59, 130, 246, 0.1);
   }
 
   .gradient-border {
@@ -194,7 +201,7 @@
     transition-duration: 300ms;
   }
   .cosmic-button:hover {
-    box-shadow: 0 0 10px rgba(59,130,246,0.5);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
     transform: scale(1.05);
   }
   .cosmic-button:active {
