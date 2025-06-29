@@ -79,4 +79,3 @@ npm run build
 ## 🙋 Author
 
 **Muhammad Hadianur Al Rafi**  
-*Informatics Engineering Student @ Universitas Palangka Raya*  
