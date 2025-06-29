@@ -3,13 +3,14 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Phone,
+  // Phone,
   Send,
-  Twitter,
+  // Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -63,7 +64,7 @@ export const ContactSection = () => {
               </div>
               <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
+                  <FaWhatsapp className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <a
@@ -94,8 +95,11 @@ export const ContactSection = () => {
                 >
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
+                <a
+                  href="https://x.com/UtrZahU6wlOPOyv?t=dRipWtKQyVprAdSbhLwRLQ&s=08"
+                  target="_blank"
+                >
+                  <FaXTwitter size={24} />
                 </a>
                 <a
                   href="https://www.instagram.com/rafi_jakson/"

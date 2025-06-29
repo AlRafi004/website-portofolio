@@ -1,34 +1,36 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Website Kedai Kopi",
+    description:
+      "A simple website for a coffee shop that showcases the business profile, menu list, and an online ordering feature in a responsive and user-friendly design.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["JavaScript", "HTML", "CSS"],
+    demoUrl: "https://kedai-kopi-latte-amore.vercel.app/",
+    githubUrl: "https://github.com/AlRafi004/kedai-kopi-latte-amore",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Website To-do-list",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A simple and responsive To-Do List web app that lets users add, delete, and mark tasks as completed.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["TailwindCSS", "JavaScript", "HTML", "CSS"],
+    demoUrl: "https://website-to-do-list.vercel.app/",
+    githubUrl: "https://github.com/AlRafi004/website-to-do-list",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Website Anime dan Manga",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Anime search web application built with Next.js, Tailwind CSS, and TypeScript. Displays real-time anime listings from the Jikan API.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Next.js", "TailwindCSS", "TypeScript", "Jikan API"],
+    demoUrl: "https://website-anime-manga-rafi.vercel.app/",
+    githubUrl: "https://github.com/AlRafi004/website-anime-manga",
   },
 ];
 
@@ -61,7 +63,7 @@ export const ProjectsSection = () => {
               </div>
 
               <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4 justify-center">
                   {project.tags.map((tag) => (
                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
@@ -100,7 +102,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/AlRafi004"
+            href="#"
           >
             Check My Github <ArrowRight size={16} />
           </a>

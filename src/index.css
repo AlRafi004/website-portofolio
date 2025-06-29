@@ -98,6 +98,30 @@
   body {
     @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
+    background: linear-gradient(
+      180deg,
+      #0a2540 0%,
+      #205072 60%,
+      #2c5364 100%
+    ) !important;
+    position: relative;
+  }
+
+  .body-light-effect::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 40vh;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.05) 60%,
+      transparent 100%
+    );
+    z-index: 1;
   }
 }
 
@@ -149,17 +173,44 @@
     position: absolute;
     border-radius: 50%;
     background: hsl(var(--foreground));
-    box-shadow: 0 0 10px 2px hsla(var(--foreground), 0.6), 
-                0 0 20px 4px hsla(var(--foreground), 0.3);
+    box-shadow: 0 0 10px 2px hsla(var(--foreground), 0.6),
+      0 0 20px 4px hsla(var(--foreground), 0.3);
   }
 
   .meteor {
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(to right, hsl(var(--foreground)), hsl(var(--foreground)), transparent);
+    background: linear-gradient(
+      to right,
+      hsl(var(--foreground)),
+      hsl(var(--foreground)),
+      transparent
+    );
     box-shadow: 0 0 15px 5px hsla(var(--foreground), 0.5),
-                0 0 30px 8px hsla(var(--foreground), 0.2),
-                0 0 60px 12px hsla(var(--primary), 0.3);
+      0 0 30px 8px hsla(var(--foreground), 0.2),
+      0 0 60px 12px hsla(var(--primary), 0.3);
+  }
+
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(173, 216, 230, 0.5);
+    box-shadow: 0 0 16px 4px rgba(173, 216, 230, 0.2);
+    animation: bubble-up linear infinite;
+  }
+
+  @keyframes bubble-up {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.7;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-110vh) scale(1.2);
+      opacity: 0;
+    }
   }
 }
 

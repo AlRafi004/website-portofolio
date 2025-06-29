@@ -12,20 +12,22 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Explorer of Smart Systems & Digital Tech
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              I enjoy creating digital solutions from web applications and data
+              systems to experimenting with automation and artificial
+              intelligence. My interests span across web development, data
+              management, and exploring emerging technologies.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              I once joined the Advanced AI division in a cross-disciplinary
+              tech project, which strengthened my passion for combining
+              creativity with technology to make real impact. For me, learning
+              technology is a never-ending journey a path to continuously grow
+              and contribute.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -35,7 +37,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="https://drive.google.com/file/d/1iy_fGWYesKgC0waOxxaB2f5vVeUwEeT7/view?usp=sharing"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -51,9 +53,10 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> Web Development</h4>
-                  <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                  <p className="text-muted-foreground text-justify">
+                    Developing functional and user-friendly websites that
+                    prioritize accessibility, responsiveness, and a smooth user
+                    experience, using widely adopted web development practices.
                   </p>
                 </div>
               </div>
@@ -64,10 +67,13 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                  <h4 className="font-semibold text-lg">
+                    AI & Machine Learning
+                  </h4>
+                  <p className="text-muted-foreground text-justify">
+                    Exploring intelligent systems through real-world projects,
+                    including plant disease detection using AI and user research
+                    for smart apps.
                   </p>
                 </div>
               </div>
@@ -79,10 +85,12 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
-                  <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                  <h4 className="font-semibold text-lg">
+                    Project & Team Management
+                  </h4>
+                  <p className="text-muted-foreground text-justify">
+                    Leading and supporting projects by ensuring effective
+                    teamwork, organized planning, and consistent follow-through.
                   </p>
                 </div>
               </div>
