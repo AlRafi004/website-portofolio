@@ -1,6 +1,20 @@
-# 💼 Portfolio Website
+<div align="center">
 
-A clean, modern, and responsive developer portfolio template built with **React**, **Tailwind CSS**, and **React Icons**. This portfolio is designed to showcase your skills, projects, and contact information in an elegant, responsive layout.
+# PORTOFOLIO WEBSITE
+
+A clean, modern, and responsive developer portfolio template built with **React**, **Tailwind CSS**, and **React Icons**.  
+This portfolio is designed to showcase your skills, projects, and contact information in an elegant, responsive layout.
+
+<br/>
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/React%20Icons-EFD81D?style=for-the-badge&logo=react&logoColor=black" />
+
+</div>
+
+---
 
 ## 🚀 Features
 
@@ -12,12 +26,7 @@ A clean, modern, and responsive developer portfolio template built with **React*
 - 💬 Contact form integration
 - 🌙 Dark/Light mode support (if implemented)
 
-## 🛠️ Built With
-
-- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-- ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-- ![React Icons](https://img.shields.io/badge/React%20Icons-EFD81D?style=for-the-badge&logo=react&logoColor=black)
+---
 
 ## 📂 Folder Structure
 
@@ -38,6 +47,8 @@ website-portfolio/
 ├── package.json
 └── README.md
 ```
+
+---
 
 ## 📦 Installation
 
